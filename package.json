@@ -2,19 +2,31 @@
   "name": "@zudenkovas/aprila-design-system",
   "version": "0.0.1",
   "private": false,
-  "type": "module",
-  "files": ["dist"],
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    },
-    "./styles": "./dist/style.css"
+  "description": "A React component library with a warm, earthy theme built with CSS Modules and CSS custom properties. Ships with light and dark mode support out of the box.",
+  "homepage": "https://github.com/zudenkovas/aprila-design-system#readme",
+  "bugs": {
+    "url": "https://github.com/zudenkovas/aprila-design-system/issues"
   },
-  "sideEffects": ["**/*.css"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zudenkovas/aprila-design-system.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "exports": {
+  ".": {
+    "import": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "./styles": "./dist/style.css",
+  "./styles.css": "./dist/style.css"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -23,10 +35,6 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
-  },
-  "peerDependencies": {
-    "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "dependencies": {
     "react": "^19.2.4",
@@ -57,5 +65,13 @@
     "vite": "^8.0.0",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.1.0"
-  }
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "module": "./dist/index.js",
+  "sideEffects": [
+    "**/*.css"
+  ]
 }

@@ -25,3 +25,8 @@ dist-ssr
 
 *storybook.log
 storybook-static
+
+.npmrc
+
+# Local Netlify folder
+.netlify
