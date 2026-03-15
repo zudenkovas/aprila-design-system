@@ -55,3 +55,20 @@ export const Disabled: Story = {
     disabled: true,
   },
 };
+
+export const WithLabel: Story = {
+  args: {
+    id: 'email',
+    type: 'email',
+    label: 'Email address',
+  },
+};
+
+export const WithLabelFilled: Story = {
+  args: {
+    id: 'name',
+    type: 'text',
+    label: 'Full name',
+    defaultValue: 'John Doe',
+  },
+};
