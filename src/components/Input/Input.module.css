@@ -1,0 +1,51 @@
+/* ── Base ── */
+.input {
+  display: flex;
+  height: 1.5rem;
+  width: 100%;
+  border-radius: var(--radius, 0.5rem);
+  border: 1px solid var(--input);
+  background-color: var(--background);
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--foreground);
+  transition-property: color, border-color, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* ── File input ── */
+.input[type='file']::file-selector-button {
+  border: 0;
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+/* ── Placeholder ── */
+.input::placeholder {
+  color: var(--muted-foreground);
+}
+
+/* ── Focus ── */
+.input:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--ring-offset), 0 0 0 4px var(--ring);
+}
+
+/* ── Disabled ── */
+.input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* ── Medium screens ── */
+@media (min-width: 768px) {
+  .input {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
