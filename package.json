@@ -1,6 +1,6 @@
 {
   "name": "@zudenkovas/aprila-design-system",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "A React component library with a warm, earthy theme built with CSS Modules and CSS custom properties. Ships with light and dark mode support out of the box.",
   "homepage": "https://github.com/zudenkovas/aprila-design-system#readme",
@@ -15,12 +15,12 @@
   "author": "",
   "type": "module",
   "exports": {
-  ".": {
-    "import": "./dist/index.js",
-    "types": "./dist/index.d.ts"
-  },
-  "./styles": "./dist/style.css",
-  "./styles.css": "./dist/style.css"
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/style.css",
+    "./styles.css": "./dist/style.css"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
